@@ -19,12 +19,12 @@ module.exports = (router) => {
   router
     .route('/quarto/:quartoid/reserva')
     .post(
-      quartosController.postQuartoInscricao
+      quartosController.postQuartoReserva
     );
 
 
   router
-    .route('/quarto/:quartoid/reserva/:idreserva')
+    .route('/reserva/:idreserva')
     .delete(
       quartosController.deleteQuartoReserva
     );
