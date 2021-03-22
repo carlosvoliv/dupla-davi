@@ -7,11 +7,12 @@ const getQuartos = async (req, res, next) => {
 
   res.status(200).send(result.map(item => {
 
-    const { id, name, ...resto } = item;
+    const { id, name, description, ...resto } = item;
 
     return {
       id,
-      name
+      name,
+      description
     }
 
   }) || []);
