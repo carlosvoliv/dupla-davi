@@ -11,7 +11,8 @@ module.exports = (sequelize, DataTypes) => {
       },
       name: DataTypes.TEXT,
       email: DataTypes.TEXT,
-      data_nascimento: DataTypes.DATE
+      checkin: DataTypes.DATE,
+      checkout: DataTypes.DATE
     },
     {
       underscored: true,

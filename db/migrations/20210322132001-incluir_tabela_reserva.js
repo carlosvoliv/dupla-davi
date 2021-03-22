@@ -17,7 +17,11 @@ module.exports = {
         allowNull: false,
         type: Sequelize.TEXT
       },
-      data_nascimento: {
+      checkin: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      checkout: {
         allowNull: false,
         type: Sequelize.DATE
       },

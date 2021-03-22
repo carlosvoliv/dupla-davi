@@ -8,42 +8,55 @@ module.exports = {
         {
           name: 'Wanda Maximov',
           email: 'scarletwitch@marvel.com',
-          data_nascimento: '2021-04-01',
-          quarto_id: '2',
+          checkin: '2021-04-01',
+          checkout: '2021-05-01',
+          quarto_id: '4',
         },
         {
           name: 'Bruce Wayne',
           email: 'batman@dc.com',
-          data_nascimento: '2021-04-01',
+          checkin: '2021-04-01',
+          checkout: '2021-05-01',
           quarto_id: '3',
         },
         {
           name: 'Barry Allen',
           email: 'flash@dc.com',
-          data_nascimento: '2021-04-01',
+          checkin: '2021-04-01',
+          checkout: '2021-05-01',
           quarto_id: '6',
         },
         {
           name: 'The Vision',
           email: 'vision@marvel.com',
-          data_nascimento: '2021-04-01',
-          quarto_id: '1',
+          checkin: '2021-04-01',
+          checkout: '2021-05-01',
+          quarto_id: '4',
         },
         {
           name: 'Steve Rogers',
           email: 'cap@marvel.com',
-          data_nascimento: '2021-04-01',
+          checkin: '2021-04-01',
+          checkout: '2021-05-01',
           quarto_id: '3',
         },
         {
           name: 'Steven Strange',
           email: 'doutor@marvel.com',
-          data_nascimento: '2021-04-01',
-          quarto_id: '4',
+          checkin: '2021-04-01',
+          checkout: '2021-05-01',
+          quarto_id: '1',
+        },
+        {
+          name: 'Peter Parker',
+          email: 'spiderman@marvel.com',
+          checkin: '2021-04-01',
+          checkout: '2021-05-01',
+          quarto_id: '2',
         },
       ],
       {
-        updateOnDuplicate: ['name', 'email', 'data_nascimento', 'quarto_id'],
+        updateOnDuplicate: ['name', 'email', 'checkin', 'checkout', 'quarto_id'],
         ignoreDuplicates: true
       }
     )
@@ -51,6 +64,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkDelete('quartos', null, {});
+    await queryInterface.bulkDelete('reservas', null, {});
   }
 };

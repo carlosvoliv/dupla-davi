@@ -72,7 +72,8 @@ const postQuartoReserva = async (req, res, next) => {
       quarto_id: quartoid, //curso_id esta definido no migrations de criacao da tabela de reserva
       name: body.name,
       email: body.email,
-      data_nascimento: body.data_nascimento,
+      checkin: body.checkin,
+      checkout: body.checkout
     }
 
     //TODO: gravar no banco
